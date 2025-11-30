@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: 'Alex Parker Blog',
-    img: '../assets/APB.png',
+    img: 'assets/APB.png',
     description: `Examen de première année en script server.
     Un petit blog simulé en MVC.`,
     tags: [
