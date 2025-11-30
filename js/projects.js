@@ -1,7 +1,7 @@
 const projects = [
   {
     title: 'Rock Paper Game',
-    img: '../assets/RPSG.png',
+    img: './assets/RPSG.png',
     description: `Petit jeu de shifumi contre l'ordinateur.<br/>Défiez votre chance. Projet autodidacte venant des <a href="https://www.100jsprojects.com/" class="underline font-bold">100JS</a>.`,
     tags: [
       {
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: 'Contact List',
-    img: '../assets/CL.png',
+    img: './assets/CL.png',
     description: `Examen de première année en script client.
     Une liste de contacts basique.`,
     tags: [
@@ -46,7 +46,7 @@ const projects = [
   },
   {
     title: 'Todo List',
-    img: '../assets/Todo.png',
+    img: './assets/Todo.png',
     description: `Une Todo App basée sur les modèles de TodoMVC. Petit projet m’ayant servi à pratiquer et à consolider les connaissances acquises lors de mon premier examen de script client.`,
     tags: [
       {
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: 'Alex Parker Blog',
-    img: 'assets/APB.png',
+    img: './assets/APB.png',
     description: `Examen de première année en script server.
     Un petit blog simulé en MVC.`,
     tags: [
@@ -86,7 +86,7 @@ const projects = [
   },
   {
     title: 'Read It Blog',
-    img: '../assets/RI.png',
+    img: './assets/RI.png',
     description: `Projet MVC. Petit projet où tout n’est pas encore fonctionnel. J’y mets l’accent sur les redirections (public/backoffice), le login/logout, le cryptage des mots de passe, le bouncer pour sécuriser l’accès au backoffice, ainsi que la gestion des sessions en PHP.`,
     tags: [
       {
@@ -103,7 +103,7 @@ const projects = [
   },
   {
     title: 'GitHub',
-    img: '../assets/GithubProfil.png',
+    img: './assets/GithubProfil.png',
     description: `Voici ma page GitHub. Un peu chaotique, elle recense une multitude de projets en tout genre, allant d’une simple maquette à des projets front, jusqu’à des projets back.`,
     tags: [
       {
