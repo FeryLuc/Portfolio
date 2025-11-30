@@ -1,0 +1,95 @@
+:root {
+  --bg: #1b140f;
+  --surface: #231a15;
+  --text: #f4e9dd;
+  --muted: #f4d9c2;
+  --accent: #ffb98a;
+  --card: #2c211b;
+  --border: #3a2a22;
+
+  --myShadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  --cardShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* Code color */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+.accent {
+  color: var(--accent);
+}
+.muted {
+  color: var(--muted);
+}
+.surface {
+  background: var(--surface);
+}
+.card {
+  background: var(--card);
+}
+.bdr {
+  border-color: var(--border);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Sections fade */
+.fade-section {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.anchor-offset {
+  scroll-margin-top: 72px;
+}
+/* Elements params */
+header {
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+}
+a {
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+.tags {
+  width: 100%;
+}
+#name {
+  border-color: var(--border);
+  color: var(--text);
+}
+#email {
+  border-color: var(--border);
+  color: var(--text);
+}
+#message {
+  border-color: var(--border);
+  color: var(--text);
+}
+/* Custom and utilities */
+.myShadowCard {
+  box-shadow: var(--cardShadow);
+  transition: all 0.7s ease-in-out;
+}
+.myShadowCard:hover {
+  box-shadow: rgba(255, 123, 0, 0.288) 0px 0px 0px 2px,
+    rgba(255, 123, 0, 0.308) 0px 4px 6px -1px,
+    rgba(255, 94, 0, 0.08) 0px 1px 0px inset;
+}
+.myShadow {
+  box-shadow: var(--myShadow);
+}
+.active {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--accent);
+  box-shadow: var(--myShadow);
+  cursor: pointer;
+}
+.invisible {
+  display: none;
+}
