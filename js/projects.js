@@ -67,6 +67,24 @@ const projects = [
     ],
   },
   {
+    title: 'Magasin en ligne',
+    img: './assets/Shop.png',
+    description: `Simulation d'un magasin en ligne, dans le cadre d'un examen de seconde année pour le cours de framework client. Travailler avec 2 sources de vérité, les produits d'un catalogue et les produits du panier du magasin.
+    MockAPI + LocalStorage.`,
+    tags: [
+      {
+        tech: 'Vue.js',
+        demo: 'https://eval-magasin-en-ligne.netlify.app/',
+        code: 'https://github.com/FeryLuc/EVAL-MAGASIN_EN-LIGNE-LUC-FERY',
+      },
+      {
+        tech: 'React.js',
+        demo: '',
+        code: '',
+      },
+    ],
+  },
+  {
     title: 'Alex Parker Blog',
     img: './assets/APB.png',
     description: `Examen de première année en script server.
