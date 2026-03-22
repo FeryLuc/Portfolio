@@ -87,11 +87,11 @@ projectsContainer.innerHTML = projects
 
   </article>
 
-  <a target="_blank" rel="noopener noreferrer" href="${project.demo}" class="${idx + 1 === projects.length ? "hidden" : ""} demo flex justify-center items-center absolute top-0 left-0 h-1/2 w-0 rounded-tl-lg rounded-tr-lg text-2xl opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100  z-10">
+  <a target="_blank" rel="noopener noreferrer" href="${project.demo}" class="${project.demo === "/" ? "hidden" : ""} demo flex justify-center items-center absolute top-0 left-0 h-1/2 w-0 rounded-tl-lg rounded-tr-lg text-2xl opacity-0 transition-all duration-500 group-hover:w-full group-hover:opacity-100  z-10">
    <span class="border border-orange-100 rounded-xl p-2 hover:border-orange-300 transition-all duration-800 hover:scale-120">DEMO</span>
   </a>
 
-  <a target="_blank" rel="noopener noreferrer" href="${project.repo}" class="code flex justify-center items-center absolute bottom-0 right-0 ${idx + 1 === projects.length ? "h-full" : "h-1/2"} w-0 rounded-bl-lg rounded-br-lg opacity-0 group-hover:w-full transition-all duration-1000 z-10 group-hover:opacity-100">
+  <a target="_blank" rel="noopener noreferrer" href="${project.repo}" class="code flex justify-center items-center absolute bottom-0 right-0 ${project.demo === "/" ? "h-full" : "h-1/2"} w-0 rounded-bl-lg rounded-br-lg opacity-0 group-hover:w-full transition-all duration-1000 z-10 group-hover:opacity-100">
     <i class="fa-brands fa-github text-6xl  hover:text-orange-200 transition-all duration-800 hover:scale-120"></i>
   </a>
 
