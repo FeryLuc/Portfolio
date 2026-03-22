@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Luc Fery</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="font-sans">
     <!-- Navigation -->
@@ -19,7 +21,9 @@
       <div
         class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between"
       >
-        <h1 class="text-xl font-semibold tracking-wide accent">Luc Fery</h1>
+        <h1 class="text-xl font-semibold tracking-wide accent">
+          <a href="#hero">Luc Fery</a>
+        </h1>
         <nav class="hidden space-x-8 text-sm font-medium md:flex">
           <a href="#hero" class="anchor-offset hover:text-white">Accueil</a>
           <a href="#about" class="anchor-offset hover:text-white">À propos</a>
@@ -61,7 +65,7 @@
             Développeur Web Junior
           </h2>
           <h3 class="text-xl font-semibold mb-4 accent underline md:text-2xl">
-            En recherche d'une opportunité de stage
+            Stagiaire chez Keiro.
           </h3>
           <p class="text-lg muted max-w-xl mx-auto mb-8 md:text-xl">
             Explore le front comme le back. Tends humblement vers un avenir
@@ -69,7 +73,7 @@
           </p>
           <a
             href="#projects"
-            class="inline-block px-6 py-3 rounded-lg card bdr font-semibold mt-2 accent myShadow"
+            class="inline-block px-6 py-3 rounded-lg card bdr font-semibold mt-2 accent myShadow hover:scale-120 trznsition-all duration-300"
             >Voir mes projets</a
           >
         </div>
@@ -182,12 +186,12 @@
               ainsi qu’aux domaines du DevOps, de la sécurité et de la data.
             </p>
             <p class="my-2 font-semibold">
-              Mon objectif aujourd’hui est de trouver un stage, indispensable à
-              la réussite de mon parcours. Je souhaite découvrir le métier dans
-              un cadre professionnel, développer mon sens du travail en équipe,
-              renforcer mes compétences techniques et continuer à apprendre.
-              Sérieux, motivé et déterminé, je suis prêt à m’investir pleinement
-              dans cette expérience.
+              Depuis février 2026, je suis stagiaire chez
+              <span class="accent">Keiro</span>. J’y participe à des projets
+              internes, j’explore différentes technologies et concepts, et
+              j’élargis ma vision du métier. J’y apprends aussi à utiliser l’IA
+              comme outil de compréhension et d’apprentissage — une approche qui
+              change vraiment la façon d’appréhender les choses.
             </p>
           </details>
         </div>
@@ -195,7 +199,7 @@
 
       <!-- Projects Section -->
       <section id="projects" class="relative z-0 min-h-screen px-6 py-20">
-        <div class="w-4/5 mx-auto lg:mx-10">
+        <div class="mx-auto lg:mx-10">
           <div class="fade-section text-center">
             <h3 class="inline-block text-3xl font-bold mb-6 accent md:text-4xl">
               Projets
@@ -205,109 +209,132 @@
               actuellement en évolution et en phase d’optimisation.
             </p>
           </div>
-          <div
-            id="projectsContainer"
-            class="max-w-6xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-          ></div>
-        </div>
-        <aside
-          class="fade-section relative w-full mt-8 surface px-6 py-6 flex justify-center lg:flex-col lg:absolute lg:top-20 lg:right-0 lg:w-40 xl:w-60 myShadowCard"
-        >
-          <div
-            class="w-full flex flex-col flex-wrap justify-around lg:justify-center"
-          >
-            <div class="flex flex-col">
-              <h3
-                class="text-xl mb-8 lg:mb-10 lg:mt-10 text-center font-bold muted underline"
-              >
-                Compétences
-              </h3>
-              <div
-                class="flex flex-wrap gap-8 mb-6 justify-center lg:flex-col lg:mx-auto"
-              >
-                <img
-                  src="assets/Vue.js.png"
-                  alt="Logo VueJs"
-                  title="VueJs"
-                  class="w-10 h-10"
-                />
-                <img
-                  src="assets/React.png"
-                  alt="Logo React"
-                  title="React"
-                  class="w-10 h-10"
-                />
-                <img
-                  src="assets/Laravel.png"
-                  alt="Logo Laravel"
-                  title="Laravel"
-                  class="w-10 h-10"
-                />
-                <img
-                  src="assets/JavaScript.png"
-                  alt="Logo Javascript"
-                  title="JavaScript"
-                  class="w-10 h-10"
-                />
-                <img
-                  src="assets/PHP.png"
-                  alt="Logo PHP"
-                  title="PHP"
-                  class="w-10 h-10"
-                />
-                <img
-                  src="assets/MySQL.png"
-                  alt="Logo MySQL"
-                  title="MySQL"
-                  class="w-10 h-10"
-                />
-              </div>
-            </div>
-            <div class="flex flex-col">
-              <h3
-                class="text-xl mb-8 mt-8 lg:mb-10 lg:mt-20 text-center font-bold muted underline"
-              >
-                Outils
-              </h3>
-              <div class="flex gap-8 justify-center lg:flex-col lg:mx-auto">
-                <img
-                  src="assets/Git.png"
-                  alt="Logo Git"
-                  title="Git"
-                  class="w-10 h-10"
-                />
-                <img
-                  src="assets/Figma.png"
-                  alt="Logo Figma"
-                  title="Figma"
-                  class="w-10 h-10"
-                />
-                <img
-                  src="assets/Vite.js.png"
-                  alt="Logo Vite.js"
-                  title="Vite.js"
-                  class="w-10 h-10"
-                />
-                <a href="https://github.com/FeryLuc" class="block">
+          <div class="relative h-40">
+            <aside
+              class="fade-section surface px-6 py-6 flex justify-center mb-8 myShadowTop rounded-tl-3xl absolute top-0 left-0 md:w-1/2"
+            >
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl text-center font-bold muted underline">
+                  Outils
+                </h3>
+                <div class="flex gap-4 md:gap-8 justify-center">
                   <img
-                    src="assets/GitHub.png"
-                    alt="Logo GitHub"
-                    title="GitHub"
-                    class="w-10 h-10 cursor-pointer"
+                    src="assets/Git.png"
+                    alt="Logo Git"
+                    title="Git"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
                   />
-                </a>
-                <a href="https://gitlab.com/FeryLuc" class="block">
                   <img
-                    src="assets/GitLab.png"
-                    alt="Logo GitLab"
-                    title="GitLab"
-                    class="w-10 h-10 cursor-pointer"
+                    src="assets/Figma.png"
+                    alt="Logo Figma"
+                    title="Figma"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
                   />
-                </a>
+                  <img
+                    src="assets/Vite.js.png"
+                    alt="Logo Vite.js"
+                    title="Vite.js"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                  />
+                  <a
+                    href="https://github.com/FeryLuc"
+                    class="block w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                    target="_blank"
+                    rel="noopener noreferrer "
+                  >
+                    <img
+                      src="assets/GitHub.png"
+                      alt="Logo GitHub"
+                      title="GitHub"
+                      class="w-10 h-10 cursor-pointer"
+                    />
+                  </a>
+                  <a
+                    href="https://gitlab.com/FeryLuc"
+                    class="block scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/GitLab.png"
+                      alt="Logo GitLab"
+                      title="GitLab"
+                      class="w-10 h-10 cursor-pointer"
+                    />
+                  </a>
+                </div>
               </div>
-            </div>
+            </aside>
           </div>
-        </aside>
+          <div class="relative h-1/2 flex justify-center mx-auto gap-4">
+            <button
+              id="prevProject"
+              class="bg-transparent hover:bg-orange-200 rounded transition-all duration-300 p-2 myShadowEl"
+            >
+              <i class="fa-solid fa-circle-left text-2xl text-orange-950"></i>
+            </button>
+            <div
+              id="projectsContainer"
+              class="flex mx-auto gap-6 fade-section overflow-x-auto scroll-smooth snap-x snap-mandatory p-4 myShadowElContainer rounded-xl"
+            ></div>
+
+            <button
+              id="nextProject"
+              class="text-center hover:bg-orange-200 transition-all duration-300 rounded p-2 myShadowEl"
+            >
+              <i class="fa-solid fa-circle-right text-2xl text-orange-950"></i>
+            </button>
+          </div>
+          <div class="relative h-40">
+            <aside
+              class="fade-section surface px-6 py-6 flex justify-center mt-8 myShadowBottom rounded-br-3xl absolute bottom-00 right-0 md:w-1/2"
+            >
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl text-center font-bold muted underline">
+                  Compétences
+                </h3>
+                <div class="flex gap-4 md:gap-8 justify-center">
+                  <img
+                    src="assets/Vue.js.png"
+                    alt="Logo VueJs"
+                    title="VueJs"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                  />
+                  <img
+                    src="assets/React.png"
+                    alt="Logo React"
+                    title="React"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                  />
+                  <img
+                    src="assets/Laravel.png"
+                    alt="Logo Laravel"
+                    title="Laravel"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                  />
+                  <img
+                    src="assets/JavaScript.png"
+                    alt="Logo Javascript"
+                    title="JavaScript"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                  />
+                  <img
+                    src="assets/PHP.png"
+                    alt="Logo PHP"
+                    title="PHP"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                  />
+                  <img
+                    src="assets/MySQL.png"
+                    alt="Logo MySQL"
+                    title="MySQL"
+                    class="w-10 h-10 scale-95 hover:scale-120 transition-all duration-300 hover:shadow-xl"
+                  />
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Section -->
@@ -359,9 +386,8 @@
     </main>
 
     <footer class="py-6 text-center text-sm muted bdr">
-      © 2025 - Portfolio
+      © 2026 - Portfolio
     </footer>
-    <script src="./js/app.js" defer></script>
-    <script src="./js/projects.js" defer></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
