@@ -2,14 +2,14 @@ import { observer } from "./app.js";
 const projects = [
   {
     title: "Rock Paper Game",
-    img: "./assets/RPSG.png",
+    img: "assets/RPSG.png",
     description: `Petit jeu de shifumi contre l'ordinateur.<br/>Défiez votre chance. Projet autodidacte venant des <a href="https://www.100jsprojects.com/" class="underline font-bold">100JS</a>.`,
     demo: "https://feryluc.github.io/Rock-Paper-Scissors-Vue/",
     repo: "https://github.com/FeryLuc/Rock-Paper-Scissors-Vue",
   },
   {
     title: "Contact List",
-    img: "./assets/CL.png",
+    img: "assets/CL.png",
     description: `Examen de première année en script client.
     Une liste de contacts basique.`,
     demo: "https://feryluc.github.io/CONTACTLIST-VUE_TW/",
@@ -17,14 +17,14 @@ const projects = [
   },
   {
     title: "Todo List",
-    img: "./assets/Todo.png",
+    img: "assets/Todo.png",
     description: `Une Todo App basée sur les modèles de TodoMVC. Petit projet m’ayant servi à pratiquer et à consolider les connaissances acquises lors de mon premier examen de script client.`,
     demo: "https://feryluc.github.io/TODOLIST_VUE_CLI_MOCKAPI/",
     repo: "https://github.com/FeryLuc/TODOLIST_VUE_CLI_MOCKAPI",
   },
   {
     title: "Magasin en ligne",
-    img: "./assets/Shop.png",
+    img: "assets/Shop.png",
     description: `Simulation d'un magasin en ligne, dans le cadre d'un examen de seconde année pour le cours de framework client. Travailler avec 2 sources de vérité, les produits d'un catalogue et les produits du panier du magasin.
     MockAPI + LocalStorage.`,
     demo: "https://eval-magasin-en-ligne.netlify.app/",
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: "Alex Parker Blog",
-    img: "./assets/APB.png",
+    img: "assets/APB.png",
     description: `Examen de première année en script server.
     Un petit blog simulé en MVC.`,
     demo: "/",
@@ -40,14 +40,14 @@ const projects = [
   },
   {
     title: "Read It Blog",
-    img: "./assets/RI.png",
+    img: "assets/RI.png",
     description: `Projet MVC. Petit projet où tout n’est pas encore fonctionnel. J’y mets l’accent sur les redirections (public/backoffice), le login/logout, le cryptage des mots de passe, le bouncer pour sécuriser l’accès au backoffice, ainsi que la gestion des sessions en PHP.`,
     demo: "/",
     repo: "https://github.com/FeryLuc/READ_IT_25_26",
   },
   {
     title: "GitHub",
-    img: "./assets/GithubProfil.png",
+    img: "assets/GithubProfil.png",
     description: `Voici ma page GitHub. Un peu chaotique, elle recense une multitude de projets en tout genre, allant d’une simple maquette à des projets front, jusqu’à des projets back.`,
     demo: "/",
     repo: "https://github.com/FeryLuc?tab=repositories",
